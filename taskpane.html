@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h2>Annexe Z – UNM Machines (v3 Test)</h2>
+  <div id="clause">
+    <p><strong>Clause détectée :</strong> <span id="clause-number">--</span>
+       <strong> | ID :</strong> <span id="clause-id">--</span>
+       <button id="refresh">Actualiser</button>
+    </p>
+  </div>
+  <div class="tabs">
+    <button class="tab-btn" data-tab="requirements">Exigences RM</button>
+    <button class="tab-btn" data-tab="hazards">Phénomènes dangereux</button>
+    <button class="tab-btn" data-tab="config">Config</button>
+  </div>
+  <div id="tab-requirements" class="tab active">
+    <h3>Exigences couvertes</h3>
+    <div id="exigences-list">[Chargement…]</div>
+    <div class="btn-row">
+      <button id="saveMapping">Enregistrer lien (doc)</button>
+      <button id="syncSP">Synchroniser SharePoint</button>
+      <button id="genZA">Générer / MAJ Annexe Z</button>
+    </div>
+  </div>
+  <div id="tab-hazards" class="tab">
+    <h3>Phénomènes dangereux (projet)</h3>
+    <div>
+      <input id="hzLabel" placeholder="Libellé du phénomène"/>
+      <input id="hzCategory" placeholder="Catégorie"/>
+      <button id="addHazard">Ajouter</button>
+    </div>
+    <div id="hazards-list">[Aucun pour l’instant]</div>
+    <div class="btn-row">
+      <button id="syncHazardsSP">Synchroniser Hazards → SharePoint</button>
+    </div>
+  </div>
+  <div id="tab-config" class="tab">
+    <h3>Configuration</h3>
+    <pre id="cfg">(config.json chargé)</pre>
+  </div>
+  <script src="taskpane.js"></script>
+  <script src="sp-sync.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "tenant": "YOUR_TENANT.onmicrosoft.com",
+  "siteUrl": "https://YOUR_TENANT.sharepoint.com/sites/UNM-Machines-Test",
+  "lists": {
+    "Projects": "Projects",
+    "RequirementsCoverage": "RequirementsCoverage",
+    "Hazards": "Hazards"
+  },
+  "auth": {
+    "useSSO": false,
+    "clientId": "YOUR_APP_CLIENT_ID",
+    "scopes": [
+      "Sites.ReadWrite.All"
+    ]
+  }
+}

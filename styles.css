@@ -1,0 +1,11 @@
+body{font-family:Segoe UI,Arial,sans-serif;padding:10px}
+h2{color:#004E8C;margin-top:0}
+.btn-row{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
+button{padding:6px 10px;background:#004E8C;color:#fff;border:none;border-radius:4px;cursor:pointer}
+button:hover{background:#0064B5}
+.tabs{margin:10px 0}
+.tab-btn{background:#e6eef7;color:#004E8C;margin-right:6px}
+.tab{display:none}
+.tab.active{display:block}
+.ex-item{display:block;margin-bottom:4px}
+#hazards-list .hz{padding:4px;border:1px solid #ddd;margin:4px 0}
